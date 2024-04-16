@@ -5,12 +5,30 @@ import OverlayedTitle from "../OverlayedTitle/OverlayedTitle"
 import React, { useState,Component } from "react";
 //styles
 import './TodayMarket.css'
+import dod001 from '../../img/dod001.png'
+import dod002 from '../../img/dod002.png'
+import dod003 from '../../img/dod003.png'
+import dod004 from '../../img/dod004.png'
+import dod005 from '../../img/dod005.png'
+import dod006 from '../../img/dod006.png'
+import dod007 from '../../img/dod007.png'
+import dod008 from '../../img/dod008.png'
+
 
 class  TodayMarket extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dogs:[{},{},{},{},{},{},{},{}]
+            dogs:[
+                {CurImage: dod001},
+                {CurImage: dod002},
+                {CurImage: dod003},
+                {CurImage: dod004},
+                {CurImage: dod005},
+                {CurImage: dod006},
+                {CurImage: dod007},
+                {CurImage: dod008},
+            ]
         };
 
         
