@@ -1,4 +1,4 @@
-import React, { useState,Component } from "react"
+import React, { Component } from "react"
 //images
 import dod001 from '../../img/dod001.png'
 import dod002 from '../../img/dod002.png'

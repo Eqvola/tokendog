@@ -5,7 +5,8 @@ import HeroCard from "../HeroCard/HeroCard"
 //images
 import maindog from "../../img/maindog.svg"
 import React, { useState,Component } from "react"
-
+import dod011 from '../../img/dog-200-11.svg'
+import dod012 from '../../img/dog-500-9.svg'
 //styles
 import './HeroSection.css'
 class  HeroSection extends Component {
@@ -13,7 +14,7 @@ class  HeroSection extends Component {
         super(props);
         this.state = {
             dogs:[
-                {},{}
+                {CurImage: dod011},{ CurImage: dod012}
             ]
         };
 

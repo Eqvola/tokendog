@@ -32,6 +32,7 @@ render() {
             <div className={`card ${this.state.position === 'left' ? 'heroLeftBlock': 'heroRightBlock'}`}>
                 <div className="card-img-bg">
                     <img src={this.state.dog.CurImage} className="card-img-top" alt="..."/>
+                    {/* <img src={this.state.dog.CurImage} className="card-img-top" alt="..."/> */}
                 </div>
                 <div className="card-body">
                     <div className="cBodyLeft">
