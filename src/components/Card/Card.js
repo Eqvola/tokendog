@@ -8,17 +8,21 @@ import dod005 from '../../img/dod005.png'
 import dod006 from '../../img/dod006.png'
 import dod007 from '../../img/dod007.png'
 import dod008 from '../../img/dod008.png'
+import dod009 from '../../img/dog-10-2.svg'
+import dod010 from '../../img/dog-2-3.svg'
+import dod011 from '../../img/dog-200-11.svg'
+import dod012 from '../../img/dog-500-9.svg'
 import nft from '../../img/nft.png'
 //styles
 import './Card.css'
 
 class Card extends Component {
-    
     constructor(props) {
         super(props);
+        this.imgArray = [dod001, dod002, dod003, dod004, dod005,dod006,dod007,dod008, dod009, dod010, dod011, dod012 ];
         this.state = {
             name:((props.name==undefined)?"":props.name),
-            img:((props.img==undefined)?dod003:props.img),
+            img:((props.img==undefined)?this.imgArray[Math.floor(Math.random()*12)]:props.img),
             text:((props.text==undefined)?"Sell":props.text),
             dogid:((props.dogid==undefined)?0:props.dogid),
             price:((props.price==undefined)?"":props.price),
@@ -34,7 +38,7 @@ class Card extends Component {
     }
     componentWillReceiveProps(nextProps) {
         this.setState( {name:((nextProps.name==undefined)?"":nextProps.name)});
-         this.setState( {img:((nextProps.img==undefined)?dod003:nextProps.img)});
+         this.setState( {img:((nextProps.img==undefined)?this.imgArray[Math.floor(Math.random()*12)]:nextProps.img)});
          this.setState( {text:((nextProps.text==undefined)?"Sell":nextProps.text)});
          this.setState( {dogid:((nextProps.dogid==undefined)?0:nextProps.dogid)});
          this.setState( {price:((nextProps.price==undefined)?"":nextProps.price)});
